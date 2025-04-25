@@ -1,0 +1,79 @@
+/* ===== palette ===== */
+:root{--accent:#1abc9c;--accent-d:#159a80;--text:#333;--bg:#fff;--light:#f3f6f8}
+
+/* reset */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Roboto',sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+
+/* shared button */
+.btn{display:inline-block;border:none;cursor:pointer;text-align:center;padding:.55rem 1.3rem;border-radius:2rem;font-weight:600;font-size:.88rem;text-decoration:none}
+.btn.secondary{background:var(--light);color:var(--accent-d)}.btn.secondary:hover{background:#e1e7ea}
+.btn.small{font-size:.8rem;padding:.45rem 1.1rem}
+
+/* HEADER & FOOTER reuse earlier global CSS */
+
+/* ===== header ===== */
+.site-header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 2rem;border-bottom:1px solid var(--light);position:sticky;top:0;background:#fff;z-index:800}
+
+.brand-search{display:flex;align-items:center;gap:1.25rem;flex:1 1 20rem}
+.logo-img{height:46px;width:auto}
+
+.search-bar{flex:1;display:flex;background:var(--light);border-radius:2rem;overflow:visible;max-width:28rem}
+.search-bar input{flex:1;border:none;background:transparent;padding:.6rem 1rem;font-size:.95rem;border-radius:2rem 0 0 2rem}
+.search-bar input:focus{outline:none;box-shadow:0 0 0 2px var(--accent) inset}
+.search-bar button{border:none;background:transparent;padding:0 1rem;cursor:pointer;font-size:1rem;color:var(--accent-d)}
+
+.site-nav ul{list-style:none;display:flex;gap:1.5rem;flex-wrap:wrap}
+.site-nav a{text-decoration:none;color:var(--text);font-weight:500}
+.site-nav a i{margin-right:.4rem;color:var(--accent)}
+
+.user-links a{text-decoration:none;margin-left:1rem;color:var(--text);font-weight:500}
+.user-links a i{margin-right:.4rem;color:var(--accent)}
+
+/* hero */
+.page-hero{text-align:center;padding:4.8rem 2rem 5rem;background:linear-gradient(135deg,var(--accent)0%,var(--accent-d)100%);color:#fff;border-radius:0 0 2rem 2rem}
+.page-hero h1{font-size:2.3rem;margin-bottom:.6rem;font-weight:700;line-height:1.25}
+.page-hero p{font-size:1.05rem;max-width:38rem;margin:0 auto}
+
+/* fades */
+.fade-in{opacity:0;animation:fadeIn .8s forwards}@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1}}
+.fade-in.delay-1{animation-delay:.2s}
+.fade-up{opacity:0;transform:translateY(24px);transition:.6s ease-out}
+.fade-up.delay-1{transition-delay:.15s}.fade-up.delay-2{transition-delay:.3s}
+.fade-up.in-view{opacity:1;transform:none}
+
+/* section basics */
+section{max-width:900px;margin:-3rem auto 4rem;padding:0 1.5rem}
+section h2{font-size:1.6rem;color:var(--accent-d);margin-bottom:1.1rem;display:flex;align-items:center;gap:.6rem}
+section h2 i{color:var(--accent);font-size:1.3rem}
+
+/* Our story */
+.story-section p{font-size:.95rem;margin:.7rem 0;color:#555}
+
+/* Breeder standards */
+.standards-section ul{margin-left:1.2rem;font-size:.9rem;color:#555}
+.standards-section li{margin:.35rem 0}
+.note{font-size:.85rem;margin-top:1rem;color:#666}
+
+/* Careers */
+.careers-grid{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-bottom:1.3rem}
+.careers-grid article{background:#fff;border:1px solid #e5e9ec;border-radius:1rem;box-shadow:0 2px 4px rgba(0,0,0,.05);padding:1.4rem;display:flex;flex-direction:column;gap:.6rem}
+.careers-grid h3{font-size:1.05rem;color:var(--accent-d)}
+.careers-grid p{font-size:.88rem;color:#555}
+.centered{text-align:center;font-size:.9rem}
+
+/* ===== footer ===== */
+.site-footer{background:#f8fafc;padding:3.5rem 2rem 2rem}
+.footer-columns{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));max-width:1200px;margin:0 auto 2.5rem}
+.footer-col h4{margin-bottom:.7rem;color:var(--accent-d);font-size:1.05rem}
+.footer-col ul{list-style:none}
+.footer-col li{margin:.35rem 0}
+.footer-col a{text-decoration:none;color:var(--text);font-size:.9rem}
+.footer-col.social .social-links a{font-size:1.25rem;margin-right:.8rem;color:var(--accent)}
+.footer-col.social .social-links a:hover{color:var(--accent-d)}
+.footer-col.club{display:flex;flex-direction:column;gap:.6rem}
+
+.footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;max-width:1200px;margin:0 auto}
+.footer-logo{height:46px;width:auto}
+.legal{list-style:none;display:flex;gap:1rem;flex-wrap:wrap}
+.legal a{text-decoration:none;color:#666;font-size:.85rem}

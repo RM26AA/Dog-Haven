@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Haven | Dogs Club</title>
+
+  <!-- fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- page-specific CSS -->
+  <link rel="stylesheet" href="dogs-club.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="brand-search">
+      <a href="index.html" class="logo"><img src="logo5.png" alt="Dog Haven logo" class="logo-img"></a>
+      <form class="search-bar" role="search">
+        <input type="search" placeholder="Search breeds, toys, food…" aria-label="Search">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="breeds.html"><i class="fa-solid fa-paw"></i> Shop/Breeds</a></li>
+        <li><a href="my-dogs.html"><i class="fa-solid fa-dog"></i> My Dogs</a></li>
+        <li><a href="bookings.html"><i class="fa-solid fa-calendar-check"></i> Bookings</a></li>
+        <li><a href="support.html"><i class="fa-solid fa-circle-question"></i> Support</a></li>
+        <li><a href="dogs-club.html" class="active"><i class="fa-solid fa-medal"></i> Dogs Club</a></li>
+      </ul>
+    </nav>
+
+    <div class="user-links">
+      <a href="sign-in.html"><i class="fa-regular fa-user"></i> Account</a>
+      <a href="basket.html"><i class="fa-solid fa-basket-shopping"></i> Basket</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="page-hero">
+    <h1 class="fade-in">Join our Dogs Club</h1>
+    <p class="fade-in delay-1">Earn points every time you shop &nbsp;•&nbsp; Unlock tail-wagging perks</p>
+    <a href="sign-in.html" class="btn primary big pulse">Join for free</a>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="works-section fade-up">
+    <h2>How it works</h2>
+    <div class="steps-grid">
+      <article><span class="num">1</span><h3>Sign up</h3><p>Create (or log in to) your free Dog Haven account.</p></article>
+      <article><span class="num">2</span><h3>Earn points</h3><p><strong>5 points</strong> for every £1 you spend on dogs, food, toys or services.</p></article>
+      <article><span class="num">3</span><h3>Redeem</h3><p>Every <strong>100 points = £1</strong> off at checkout — or save them for bigger rewards.</p></article>
+    </div>
+  </section>
+
+  <!-- ===== BENEFITS ===== -->
+  <section class="benefits-section fade-up delay-1">
+    <h2>Member benefits</h2>
+    <div class="perk-grid">
+      <article><i class="fa-solid fa-truck-fast"></i><h3>Free standard delivery</h3><p>No min. spend for Silver & Gold.</p></article>
+      <article><i class="fa-solid fa-gift"></i><h3>Birthday treat box</h3><p>Toys & healthy snacks on your dog’s special day.</p></article>
+      <article><i class="fa-solid fa-syringe"></i><h3>10 % off vet boosters</h3><p>Stay up-to-date for less.</p></article>
+      <article><i class="fa-solid fa-star"></i><h3>Early-access sales</h3><p>Shop new drops & Black-Friday deals 24 h early.</p></article>
+    </div>
+  </section>
+
+  <!-- ===== TIERS ===== -->
+  <section class="tiers-section fade-up delay-2">
+    <h2>Tiers &amp; milestones</h2>
+    <table>
+      <thead><tr><th>Tier</th><th>Annual spend</th><th>Earn rate</th><th>Key perks</th></tr></thead>
+      <tbody>
+        <tr><td>Bronze</td><td>£0 – £299</td><td>5 pts / £1</td><td>Monthly tips newsletter</td></tr>
+        <tr><td>Silver</td><td>£300 – £799</td><td>6 pts / £1</td><td>Free std delivery + birthday box</td></tr>
+        <tr><td>Gold</td><td>£800 +</td><td>8 pts / £1</td><td>All perks + 10 % booster-shots + VIP hotline</td></tr>
+      </tbody>
+    </table>
+    <p class="centered">Tier status is recalculated daily and lasts 12 months from the date achieved.</p>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq-wrapper">
+    <h2>Club FAQs</h2>
+    <button class="accordion-btn active">Do points expire?</button>
+    <div class="panel open"><p>Points expire after 24 months of inactivity (no earn or redeem). We’ll send reminders beforehand.</p></div>
+
+    <button class="accordion-btn">Can I combine points with promo codes?</button>
+    <div class="panel"><p>Yes. Apply your discount code first, then choose how many points to redeem at checkout.</p></div>
+
+    <button class="accordion-btn">Is Dogs Club really free?</button>
+    <div class="panel"><p>Absolutely. There’s no membership fee and no hidden catch.</p></div>
+  </section>
+
+  <!-- ===== footer ===== -->
+  <footer class="site-footer">
+
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Customer support</h4>
+        <ul><li><a href="customer-support.html">Shipping &amp; returns</a></li><li><a href="customer-support.html">FAQ</a></li><li><a href="customer-support.html">Contact us</a></li></ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>About your dogs</h4>
+        <ul><li><a href="about-your-dogs.html">Nutrition</a></li><li><a href="about-your-dogs.html">Training</a></li><li><a href="about-your-dogs.html">Health &amp; wellness</a></li></ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>About us</h4>
+        <ul><li><a href="about-us.html">Our story</a></li><li><a href="about-us.html">Breeder standards</a></li><li><a href="about-us.html">Careers</a></li></ul>
+      </div>
+
+      <div class="footer-col club">
+        <h4>Join our Dogs Club</h4>
+        <p>Earn points every time you shop.</p>
+        <a href="dogs-club.html" class="btn secondary small">Learn more</a>
+      </div>
+
+      <div class="footer-col social">
+        <h4>Follow us</h4>
+        <div class="social-links">
+			<a href="https://www.facebook.com/YourPage"    target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+			<a href="https://www.instagram.com/YourHandle" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://twitter.com/YourHandle"       target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+			<a href="https://www.youtube.com/@YourChannel" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+		</div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <a href="#"><img src="logo5.png" alt="Dog Haven logo" class="footer-logo"></a>
+      <ul class="legal">
+        <li><a href="regulatory.html">Terms &amp; conditions</a></li>
+        <li><a href="regulatory.html">Privacy policy</a></li>
+        <li><a href="regulatory.html">Cookies</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ===== JS: reveal + accordion ===== -->
+  <script>
+    /* fade-up reveal */
+    const io=new IntersectionObserver(e=>e.forEach(v=>v.isIntersecting&&v.target.classList.add('in-view')),{threshold:.15});
+    document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));
+
+    /* accordion */
+    document.querySelectorAll('.accordion-btn').forEach(btn=>{
+      btn.onclick=()=>{btn.classList.toggle('active');btn.nextElementSibling.classList.toggle('open');};
+    });
+  </script>
+</body>
+</html>

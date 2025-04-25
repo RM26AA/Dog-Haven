@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog Haven | Sign in</title>
+
+  <!-- fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- page CSS -->
+  <link rel="stylesheet" href="sign-in.css" />
+</head>
+<body>
+
+  <!-- ===== LOGO-ONLY HEADER (minimal) ===== -->
+  <header class="mini-header">
+    <a href="index.html"><img src="logo5.png" alt="Dog Haven logo" class="logo-img" /></a>
+  </header>
+
+  <!-- ===== SIGN-IN WRAPPER ===== -->
+  <main class="sign-wrapper">
+
+    <section class="sign-card">
+      <h1>Welcome back</h1>
+      <p class="subtitle">Sign in to continue to Dog Haven</p>
+
+      <form id="signinForm">
+        <label>
+          Email address
+          <input type="email" name="email" required placeholder="you@example.com">
+        </label>
+
+        <label class="password-field">
+          Password
+          <input type="password" name="password" id="pwd" required minlength="6" placeholder="••••••••">
+          <button type="button" id="togglePwd" aria-label="Show password"><i class="fa-regular fa-eye"></i></button>
+        </label>
+
+        <div class="extras">
+          <label class="remember">
+            <input type="checkbox" name="remember"> Remember me
+          </label>
+          <a href="#" class="forgot">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn primary w-100">Sign&nbsp;in</button>
+      </form>
+
+      <div class="divider"><span>or</span></div>
+
+      <div class="social-buttons">
+        <a href="#" class="btn secondary w-100"><i class="fa-brands fa-google"></i> Continue with Google</a>
+        <a href="#" class="btn secondary w-100"><i class="fa-brands fa-facebook"></i> Continue with Facebook</a>
+      </div>
+
+      <p class="signup-link">Don’t have an account? <a href="#">Create one</a></p>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (simple, centred) ===== -->
+  <footer class="mini-footer">
+    <ul>
+      <li><a href="regulatory.html">Terms</a></li>
+      <li><a href="regulatory.html">Privacy</a></li>
+      <li><a href="regulatory.html">Cookies</a></li>
+    </ul>
+    <p>&copy; 2025 Dog Haven</p>
+  </footer>
+
+  <!-- ===== JS: password toggle + dummy submit ===== -->
+  <script>
+    /* show / hide password */
+    const pwdInput = document.getElementById('pwd');
+    document.getElementById('togglePwd').onclick = () => {
+      const type = pwdInput.type === 'password' ? 'text' : 'password';
+      pwdInput.type = type;
+      pwdInput.nextElementSibling.firstElementChild.classList.toggle('fa-eye');
+      pwdInput.nextElementSibling.firstElementChild.classList.toggle('fa-eye-slash');
+    };
+
+    /* dummy submit */
+    document.getElementById('signinForm').onsubmit = e => {
+      e.preventDefault();
+      alert('This demo form is not yet connected to a backend.');
+      e.target.reset();
+    };
+  </script>
+</body>
+</html>

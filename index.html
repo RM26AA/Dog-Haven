@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog Haven | Home</title>
+
+  <!-- fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- page CSS -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- ===== cookies / policy banner ===== -->
+  <div id="policy-banner" class="policy-banner">
+    <p>We use cookies to ensure the best experience on Dog Haven. By continuing, you agree to our policy.</p>
+    <div class="policy-actions">
+      <button id="learn-more" class="btn secondary">Learn more</button>
+      <button id="agree-close" class="btn primary">Agree&nbsp;&amp;&nbsp;close</button>
+    </div>
+  </div>
+
+  <!-- ===== back-to-top ===== -->
+  <button id="back-to-top" class="back-to-top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <!-- ===== header / navigation ===== -->
+  <header class="site-header">
+
+    <!-- logo + search -->
+    <div class="brand-search">
+      <!-- just swap src to your own file name if different -->
+      <a href="index.html" class="logo">
+        <img src="logo5.png" alt="Dog Haven logo" class="logo-img" />
+      </a>
+
+      <form class="search-bar" role="search">
+        <input type="search" placeholder="Search breeds, toys, food…" aria-label="Search" />
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+
+    <!-- main site links -->
+    <nav class="site-nav">
+      <ul>
+        <li><a href="breeds.html"><i class="fa-solid fa-paw"></i> Shop/Breeds</a></li>
+        <li><a href="my-dogs.html"><i class="fa-solid fa-dog"></i> My Dogs</a></li>
+        <li><a href="bookings.html"><i class="fa-solid fa-calendar-check"></i> Bookings</a></li>
+        <li><a href="support.html"><i class="fa-solid fa-circle-question"></i> Support</a></li>
+        <li><a href="find-us.html"><i class="fa-solid fa-location-dot"></i> Find Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- sign-in + basket -->
+    <div class="user-links">
+      <a href="sign-in.html"><i class="fa-regular fa-user"></i> Sign in</a>
+      <a href="basket.html"><i class="fa-solid fa-basket-shopping"></i> Basket</a>
+    </div>
+  </header>
+
+  <!-- ===== hero ===== -->
+  <section class="hero">
+    <h1 class="fade-in">Your perfect dog is waiting.</h1>
+    <p class="tagline fade-in delay-1">Discover trusted breeders and shelters, matched to you.</p>
+    <a href="breeds.html" class="cta pulse">Explore Breeds</a>
+  </section>
+
+  <!-- ===== shop for popular breeds ===== -->
+  <section class="shop-for" id="shop-for">
+    <h2>Shop for popular breeds</h2>
+
+    <div class="breed-grid">
+      <!-- first row -->
+      <article class="breed-card fade-up"><img src="https://images.squarespace-cdn.com/content/v1/5e3d772b8465d45bc9bd4cdb/b8d99703-7764-4bfd-9bef-71f7664b49ab/Jolly+head+shot+Potomac.jpg" alt="Labrador Retriever"><h3>Labrador Retriever</h3></article>
+      <article class="breed-card fade-up delay-1"><img src="https://www.sprayedout.com/wp-content/uploads/2020/11/german-shepherd-dog-web.jpg" alt="German Shepherd"><h3>German Shepherd</h3></article>
+      <article class="breed-card fade-up delay-2"><img src="https://live.staticflickr.com/2019/2138243161_9b4f895224_c.jpg" alt="Golden Retriever"><h3>Golden Retriever</h3></article>
+      <article class="breed-card fade-up delay-3"><img src="https://images.pexels.com/photos/776078/pexels-photo-776078.jpeg" alt="French Bulldog"><h3>French Bulldog</h3></article>
+
+      <!-- second row (placeholders) -->
+      <article class="breed-card fade-up"><img src="https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZyZG9nX3BsYXlpbmdfZG9nX3BldF8xLWltYWdlLWt5YmR0ZW50LmpwZw.jpg" alt="Poodle"><h3>Poodle</h3></article>
+      <article class="breed-card fade-up delay-1"><img src="https://cdn12.picryl.com/photo/2016/12/31/rottweiler-dog-dog-lying-animals-50531c-1024.jpg" alt="Rottweiler"><h3>Rottweiler</h3></article>
+      <article class="breed-card fade-up delay-2"><img src="https://live.staticflickr.com/3276/2844199451_81dd0bc39a_b.jpg" alt="Dobermann"><h3>Dobermann</h3></article>
+      <article class="breed-card fade-up delay-3"><img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvaXMyMzYwOS1pbWFnZS1rd3Z5ZTJqYi5qcGc.jpg" alt="Siberian Husky"><h3>Siberian Husky</h3></article>
+	  <article class="breed-card fade-up delay-4"><img src="https://live.staticflickr.com/3819/13564967155_24eff28918_b.jpg" alt="Smooth-haired dachshund"><h3>Smooth-haired dachshund</h3></article>
+      <article class="breed-card fade-up delay-5"><img src="https://live.staticflickr.com/7875/31477491527_731f98e2c3_b.jpg" alt="Cane Corso"><h3>Cane Corso</h3></article>
+    </div>
+  </section>
+
+  <!-- ===== sign-up strip ===== -->
+  <section class="signup-strip">
+    <h2>Sign up and start saving</h2>
+    <p>Exclusive deals, training tips and more—straight to your inbox.</p>
+    <form class="signup-form">
+      <input type="email" placeholder="Email address" required />
+      <button type="submit" class="btn primary">Join&nbsp;now</button>
+    </form>
+  </section>
+
+  <!-- ===== footer ===== -->
+  <footer class="site-footer">
+
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Customer support</h4>
+        <ul><li><a href="customer-support.html">Shipping &amp; returns</a></li><li><a href="customer-support.html">FAQ</a></li><li><a href="customer-support.html">Contact us</a></li></ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>About your dogs</h4>
+        <ul><li><a href="about-your-dogs.html">Nutrition</a></li><li><a href="about-your-dogs.html">Training</a></li><li><a href="about-your-dogs.html">Health &amp; wellness</a></li></ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>About us</h4>
+        <ul><li><a href="about-us.html">Our story</a></li><li><a href="about-us.html">Breeder standards</a></li><li><a href="about-us.html">Careers</a></li></ul>
+      </div>
+
+      <div class="footer-col club">
+        <h4>Join our Dogs Club</h4>
+        <p>Earn points every time you shop.</p>
+        <a href="dogs-club.html" class="btn secondary small">Learn more</a>
+      </div>
+
+      <div class="footer-col social">
+        <h4>Follow us</h4>
+        <div class="social-links">
+			<a href="https://www.facebook.com/YourPage"    target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+			<a href="https://www.instagram.com/YourHandle" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://twitter.com/YourHandle"       target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+			<a href="https://www.youtube.com/@YourChannel" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+		</div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <a href="#"><img src="logo5.png" alt="Dog Haven logo" class="footer-logo"></a>
+      <ul class="legal">
+        <li><a href="regulatory.html">Terms &amp; conditions</a></li>
+        <li><a href="regulatory.html">Privacy policy</a></li>
+        <li><a href="regulatory.html">Cookies</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ===== scripts ===== -->
+  <script>
+    /* cookies banner */
+    const banner = document.getElementById('policy-banner');
+    document.getElementById('agree-close').onclick = () => banner.style.display = 'none';
+    document.getElementById('learn-more').onclick  = () => alert('More details page coming soon!');
+
+    /* back-to-top */
+    const backBtn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      backBtn.style.opacity = window.scrollY > 300 ? '1' : '0';
+    });
+    backBtn.onclick = () => window.scroll({ top: 0, behavior: 'smooth' });
+
+    /* simple fade-up on scroll (breed cards) */
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => e.isIntersecting && e.target.classList.add('in-view')),
+      { threshold: 0.15 }
+    );
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
+
+

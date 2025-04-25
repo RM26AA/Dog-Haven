@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog Haven | Bookings</title>
+
+  <!-- fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="bookings.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="brand-search">
+      <a href="index.html" class="logo"><img src="logo5.png" alt="Dog Haven logo" class="logo-img" /></a>
+      <form class="search-bar" role="search">
+        <input type="search" placeholder="Search breeds, toys, food…" aria-label="Search">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="breeds.html"><i class="fa-solid fa-paw"></i> Shop/Breeds</a></li>
+        <li><a href="my-dogs.html"><i class="fa-solid fa-dog"></i> My Dogs</a></li>
+        <li><a href="bookings.html" class="active"><i class="fa-solid fa-calendar-check"></i> Bookings</a></li>
+        <li><a href="support.html"><i class="fa-solid fa-circle-question"></i> Support</a></li>
+        <li><a href="find-us.html"><i class="fa-solid fa-location-dot"></i> Find Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="user-links">
+      <a href="sign-in.html"><i class="fa-regular fa-user"></i> Sign in</a>
+      <a href="basket.html"><i class="fa-solid fa-basket-shopping"></i> Basket</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="page-hero">
+    <h1 class="fade-in">Book a service for your dog</h1>
+    <p class="fade-in delay-1">Vet checks, grooming and training—all in one place.</p>
+  </section>
+
+  <!-- ===== BOOKING FORM ===== -->
+  <main class="booking-wrapper">
+    <aside class="service-accordion">
+
+      <button class="accordion-btn active"><i class="fa-solid fa-stethoscope"></i> Vet Check</button>
+      <div class="panel open">
+        <p>30-minute health assessment with our certified veterinarian.</p>
+      </div>
+
+      <button class="accordion-btn"><i class="fa-solid fa-bath"></i> Grooming</button>
+      <div class="panel">
+        <p>Full wash, trim and nail clipping. Approx. 1 hour.</p>
+      </div>
+
+      <button class="accordion-btn"><i class="fa-solid fa-dumbbell"></i> Training Session</button>
+      <div class="panel">
+        <p>One-on-one obedience or agility training. 45 minutes.</p>
+      </div>
+    </aside>
+
+    <section class="booking-form">
+      <h2>Request a booking</h2>
+      <form id="bookingForm">
+        <label>
+          Dog’s name
+          <input type="text" name="dogName" required>
+        </label>
+
+        <label>
+          Choose service
+          <select name="service" required>
+            <option value="">Select…</option>
+            <option value="vet">Vet Check</option>
+            <option value="groom">Grooming</option>
+            <option value="train">Training Session</option>
+          </select>
+        </label>
+
+        <label>
+          Preferred date
+          <input type="date" name="date" required>
+        </label>
+
+        <label>
+          Preferred time
+          <input type="time" name="time" required>
+        </label>
+
+        <label>
+          Notes (optional)
+          <textarea name="notes" rows="3" placeholder="Tell us anything we should know"></textarea>
+        </label>
+
+        <button type="submit" class="btn primary">Send request</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ===== SUCCESS TOAST ===== -->
+  <div id="toast" class="toast"><i class="fa-solid fa-check-circle"></i> Booking request sent!</div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Customer support</h4>
+        <ul>
+          <li><a href="#">Shipping &amp; returns</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>About your dogs</h4>
+        <ul>
+          <li><a href="#">Nutrition</a></li>
+          <li><a href="#">Training</a></li>
+          <li><a href="#">Health &amp; wellness</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>About us</h4>
+        <ul>
+          <li><a href="#">Our story</a></li>
+          <li><a href="#">Breeder standards</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col club">
+        <h4>Join our Dogs Club</h4>
+        <p>Earn points every time you shop.</p>
+        <a href="#" class="btn secondary small">Learn more</a>
+      </div>
+
+      <div class="footer-col social">
+        <h4>Follow us</h4>
+        <div class="social-links">
+			<a href="https://www.facebook.com/YourPage"    target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+			<a href="https://www.instagram.com/YourHandle" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://twitter.com/YourHandle"       target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+			<a href="https://www.youtube.com/@YourChannel" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+		</div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <a href="#"><img src="logo5.png" alt="Dog Haven logo" class="footer-logo"></a>
+      <ul class="legal">
+        <li><a href="#">Terms &amp; conditions</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ===== JS ===== -->
+  <script>
+    /* Accordion */
+    document.querySelectorAll('.accordion-btn').forEach(btn => {
+      btn.onclick = () => {
+        document.querySelectorAll('.accordion-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.panel').forEach(p => p.classList.remove('open'));
+        btn.classList.add('active');
+        btn.nextElementSibling.classList.add('open');
+      };
+    });
+
+    /* Form success toast */
+    const toast = document.getElementById('toast');
+    document.getElementById('bookingForm').onsubmit = e => {
+      e.preventDefault();
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3000);
+      e.target.reset();
+    };
+  </script>
+
+</body>
+</html>
